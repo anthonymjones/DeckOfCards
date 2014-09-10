@@ -1,0 +1,6 @@
+C:\Users\anthonyjones\Documents\GitHub\DeckOfCards\DeckOfCards\DeckOfCards\bin\Debug\DeckOfCards.exe.config
+C:\Users\anthonyjones\Documents\GitHub\DeckOfCards\DeckOfCards\DeckOfCards\obj\Debug\DeckOfCards.csprojResolveAssemblyReference.cache
+C:\Users\anthonyjones\Documents\GitHub\DeckOfCards\DeckOfCards\DeckOfCards\bin\Debug\DeckOfCards.exe
+C:\Users\anthonyjones\Documents\GitHub\DeckOfCards\DeckOfCards\DeckOfCards\bin\Debug\DeckOfCards.pdb
+C:\Users\anthonyjones\Documents\GitHub\DeckOfCards\DeckOfCards\DeckOfCards\obj\Debug\DeckOfCards.exe
+C:\Users\anthonyjones\Documents\GitHub\DeckOfCards\DeckOfCards\DeckOfCards\obj\Debug\DeckOfCards.pdb
