@@ -11,26 +11,32 @@ namespace DeckOfCards
         static void Main(string[] args)
         {
             //delcare new deck
-            Deck forPoker = new Deck();
+            var Deck = new Deck();
+
             //shuffle the cards
-            forPoker.Shuffle();
+            Deck.Shuffle();
+
             //deal cards
             List<Cards> ListofCards = new List<Cards>();
-            ListofCards = forPoker.Deal(5);
-            Console.WriteLine("Dealt Cards: ");
+            ListofCards = Deck.Deal();
+            Console.WriteLine("\n\nDealt Cards: ");
+            Console.WriteLine();
             foreach (var item in ListofCards)
             {
                 item.DealFromDeck();
             }
 
-            Console.WriteLine("\n\nRemaining Cards in the Deck");
-            forPoker.PrintDeck();
+            //deal cards
+            List<Cards> ListofCards2 = new List<Cards>();
+            ListofCards2 = Deck.Deal();
+            Console.WriteLine("\n\nDealt Cards: ");
+            Console.WriteLine();
+            foreach (var item in ListofCards2)
+            {
+                item.DealFromDeck();
+            }
 
-
-            //Console.WriteLine(string.Join("\n", ListofCards.OrderBy(x=>x)));
-
-
-
+            //keep window open
             Console.ReadKey();
         }
 

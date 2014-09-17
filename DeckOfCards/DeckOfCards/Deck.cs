@@ -31,13 +31,12 @@ namespace DeckOfCards
         //STEP 3. Methods and Functions
         public void Shuffle()
         {
-            Random rng = new Random();
+            Random shuffle = new Random();
             int totalCards = CardList.Count;
             while (totalCards > 1)
             {
-                
                 totalCards--;
-                int randCard = rng.Next(0, totalCards);
+                int randCard = shuffle.Next(0, totalCards);
                 var x = CardList[randCard];
                 CardList[randCard] = CardList[totalCards];
                 CardList[totalCards] = x;
@@ -55,6 +54,20 @@ namespace DeckOfCards
 			{
                 CardList.Remove(dealCards[i]);
 			}
+
+            return dealCards;
+        }
+        public List<Cards> Deal()
+        {
+            List<Cards> dealCards = new List<Cards>();
+            for (int i = 0; i < 5; i++)
+            {
+                dealCards.Add(CardList[i]);
+            }
+            for (int i = 0; i < dealCards.Count; i++)
+            {
+                CardList.Remove(dealCards[i]);
+            }
 
             return dealCards;
         }
